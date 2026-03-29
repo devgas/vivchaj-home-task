@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашка 13</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Хелоу еврібаді</h1>
+    <p>Згадую, що таке верстка</p>
+</header>
+<main>
+    <div class="messages">
+        <p class="error-message">Ой, щось пішло не так...</p>
+        <p class="success-message">Реєстрація успішна!</p>
+    </div>
+    <form id="registration-form" novalidate>
+        <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" placeholder="Мінімум 2 символи">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Мінімум 8 символів, включно з цифрою">
+            <label for="password-strength">Складність паролю: <span id="password-strength-label"></span></label>
+            <progress id="password-strength" max="100" value="0">0%</progress>
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password">Підтвердження пароля</label>
+            <input type="password" id="confirm-password" name="confirmPassword" placeholder="Повторіть пароль">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Вік</label>
+            <input type="number" id="age" name="age" placeholder="16-100">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="terms" name="terms">
+                Я погоджуюсь з умовами використання
+            </label>
+            <span class="error-message"></span>
+        </div>
+
+        <button type="submit">Зареєструватися</button>
+    </form>
+    <div id="users-list"></div>
+</main>
+</body>
+</html>

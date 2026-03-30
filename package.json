@@ -1,0 +1,20 @@
+{
+  "name": "vyvchai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devgas/vivchaj-home-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devgas/vivchaj-home-task/issues"
+  },
+  "homepage": "https://github.com/devgas/vivchaj-home-task#readme"
+}

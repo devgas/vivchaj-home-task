@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашка 14</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Todo list</h1>
+        <section>
+            <div class="todo-input">
+                <label for="todo-input">Нова задача </label><input type="text" id="todo-input" placeholder="Що потрібно зробити?"/>
+                <label for="due-date">Виконати до:</label>
+                <input
+                        type="date"
+                        id="due-date"
+                        name="trip-start"
+                        value="2026-01-01"
+                        min="2026-01-01"
+                        max="2050-31-12" />
+                <div class="tags">
+                    <button class="tag-btn" data-tag="work">Робота</button>
+                    <button class="tag-btn" data-tag="home">Дім</button>
+                    <button class="tag-btn" data-tag="learning">Навчання</button>
+                </div>
+                <button id="todo-add">Додати</button>
+            </div>
+        </section>
+        <section>
+            <div class="todo-filters">
+                <p>Фільтр по статусу</p>
+                <button class="filter-btn active" data-filter="all">Всі</button>
+                <button class="filter-btn" data-filter="active">Активні</button>
+                <button class="filter-btn" data-filter="completed">Виконані</button>
+            </div>
+            <div class="tag-filters">
+                <p>Фільтр по тегу</p>
+                <button class="tag-btn active" data-tag="all">Усі</button>
+                <button class="tag-btn" data-tag="work">Робота</button>
+                <button class="tag-btn" data-tag="home">Дім</button>
+                <button class="tag-btn" data-tag="learning">Навчання</button>
+            </div>
+            <div class="todo-list-top">
+                <label for="sort-options">Сортувати</label>
+                <select id="sort-options">
+                    <option value="newest">Від найновіших</option>
+                    <option value="oldest">Від найстаріших</option>
+                </select>
+                <p>Список задач:</p>
+            </div>
+
+            <ul id="todo-list"></ul>
+        </section>
+        <section>
+            <div class="summary">
+                <span id="todo-counter">0</span><span class="tasks-sum"> завдання залишилось</span>
+            </div>
+            <button id="clear-completed">Очистити</button>
+        </section>
+    </main>
+</body>
+</html>

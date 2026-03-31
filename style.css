@@ -1,0 +1,199 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.todo-input label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.todo-input input {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.todo-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.tag-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.tag-btn.active {
+    opacity: 0.5;
+}
+
+.todo-input button.tag-btn:hover {
+    opacity: 0.5;
+}
+
+.tag-btn[data-tag="all"] {
+    background-color: #6c757d;
+}
+
+.tag-btn[data-tag="work"],
+.todo-item .todo-tag[data-tag="work"] {
+    background-color: #007bff;
+}
+
+.tag-btn[data-tag="home"],
+.todo-item .todo-tag[data-tag="home"] {
+    background-color: #28a745;
+}
+
+.tag-btn[data-tag="learning"],
+.todo-item .todo-tag[data-tag="learning"] {
+    background-color: #dc3545;
+}
+
+.todo-input button:hover {
+    background-color: #218838;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-item.overdue {
+    background: #dc3545;
+}
+
+.todo-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.todo-item.todo-tag {
+    display: flex;
+    gap: 5px;
+}
+
+.todo-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.todo-actions button:hover {
+    background-color: #f0f0f0;
+}
+
+.todo-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.todo-filters button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.todo-filters button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.todo-filters button:hover {
+    background-color: #f0f0f0;
+}
+
+.tag-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tag-filters button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tag-filters button:hover {
+    opacity: 0.5;
+}
+
+.sort-by-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sort-by-date li {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#clear-completed {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+}

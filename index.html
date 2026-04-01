@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Список користувачів</title>
+</head>
+<body>
+<header>
+    <h1>Список користувачів</h1>
+    <p class="error-message"></p>
+    <div class="search-wrap">
+        <label for="search">Пошук</label>
+        <input id="search" type="text" placeholder="Введіть ім'я користувача">
+    </div>
+</header>
+<main>
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Завантаження...</p>
+    </div>
+    <section>
+        <div class="users-list"></div>
+    </section>
+</main>
+</body>
+</html>
